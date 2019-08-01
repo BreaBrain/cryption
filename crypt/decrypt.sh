@@ -13,7 +13,6 @@ read b
 echo "And an another number between 1 and 10"
 read c
 
-clear
 if [[ $t == "" ]]
 then
 ls -l
