@@ -31,124 +31,123 @@ echo "And an another number between 1 and 10"
 read c
 fi
 
-clear
 if [[ $t == "" ]]
 then
 ls -l
 echo "File or Folder"
 read t
 fi
-
+clear
 ccrypt -dr /etc/encrypt/keys -k /etc/encrypt/key/key.txt > /dev/null
 
-if [[ $a == 0 ]]
+if [[ $c == 0 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key0.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 1 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key0.txt > /dev/null || echo "Wrong Key"
+elif [[ $c == 1 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key1.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 2 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key1.txt > /dev/null || echo "Wrong Key"
+elif [[ $c == 2 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key2.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 3 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key2.txt > /dev/null || echo "Wrong Key"
+elif [[ $c == 3 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key3.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 4 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key3.txt > /dev/null || echo "Wrong Key"
+elif [[ $c == 4 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key4.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 5 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key4.txt > /dev/null || echo "Wrong Key"
+elif [[ $c == 5 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key5.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 6 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key5.txt > /dev/null || echo "Wrong Key"
+elif [[ $c == 6 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key6.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 7 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key6.txt > /dev/null || echo "Wrong Key"
+elif [[ $c == 7 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key7.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 8 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key7.txt > /dev/null || echo "Wrong Key"
+elif [[ $c == 8 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key8.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key8.txt > /dev/null || echo "Wrong Key"
 else
-ccrypt -er $t -k /etc/encrypt/keys/key9.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key9.txt > /dev/null || echo "Wrong Key"
 fi
 
 if [ ! -d $t ]
 then
-t="$t.cpt"
+t=$(echo $t | rev | cut -c 5- | rev )
 fi
 
 if [[ $b == 0 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key0.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key0.txt > /dev/null || echo "Wrong Key"
 elif [[ $b == 1 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key1.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key1.txt > /dev/null || echo "Wrong Key"
 elif [[ $b == 2 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key2.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key2.txt > /dev/null || echo "Wrong Key"
 elif [[ $b == 3 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key3.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key3.txt > /dev/null || echo "Wrong Key"
 elif [[ $b == 4 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key4.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key4.txt > /dev/null || echo "Wrong Key"
 elif [[ $b == 5 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key5.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key5.txt > /dev/null || echo "Wrong Key"
 elif [[ $b == 6 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key6.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key6.txt > /dev/null || echo "Wrong Key"
 elif [[ $b == 7 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key7.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key7.txt > /dev/null || echo "Wrong Key"
 elif [[ $b == 8 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key8.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key8.txt > /dev/null || echo "Wrong Key"
 else
-ccrypt -er $t -k /etc/encrypt/keys/key9.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key9.txt > /dev/null || echo "Wrong Key"
 fi
 
 if [ ! -d $t ]
 then
-t="$t.cpt"
+t=$(echo $t | rev | cut -c 5- | rev )
 fi
 
-if [[ $c == 0 ]]
+if [[ $a == 0 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key0.txt > /dev/null || echo "Wrong Key"
-elif [[ $c == 1 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key0.txt > /dev/null || echo "Wrong Key"
+elif [[ $a == 1 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key1.txt > /dev/null || echo "Wrong Key"
-elif [[ $c == 2 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key1.txt > /dev/null || echo "Wrong Key"
+elif [[ $a == 2 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key2.txt > /dev/null || echo "Wrong Key"
-elif [[ $c == 3 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key2.txt > /dev/null || echo "Wrong Key"
+elif [[ $a == 3 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key3.txt > /dev/null || echo "Wrong Key"
-elif [[ $c == 4 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key3.txt > /dev/null || echo "Wrong Key"
+elif [[ $a == 4 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key4.txt > /dev/null || echo "Wrong Key"
-elif [[ $c == 5 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key4.txt > /dev/null || echo "Wrong Key"
+elif [[ $a == 5 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key5.txt > /dev/null || echo "Wrong Key"
-elif [[ $c == 6 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key5.txt > /dev/null || echo "Wrong Key"
+elif [[ $a == 6 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key6.txt > /dev/null || echo "Wrong Key"
-elif [[ $c == 7 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key6.txt > /dev/null || echo "Wrong Key"
+elif [[ $a == 7 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key7.txt > /dev/null || echo "Wrong Key"
-elif [[ $c == 8 ]]
+ccrypt -dr $t -k /etc/encrypt/keys/key7.txt > /dev/null || echo "Wrong Key"
+elif [[ $a == 8 ]]
 then
-ccrypt -er $t -k /etc/encrypt/keys/key8.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key8.txt > /dev/null || echo "Wrong Key"
 else
-ccrypt -er $t -k /etc/encrypt/keys/key9.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key9.txt > /dev/null || echo "Wrong Key"
 fi
 
 ccrypt -er /etc/encrypt/keys -k /etc/encrypt/key/key.txt > /dev/null
 
 if [ ! -d $t ]
 then
-t="$t.cpt"
+t=$(echo $t | rev | cut -c 5- | rev )
 fi
 
 ls -l $t
