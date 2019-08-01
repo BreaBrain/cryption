@@ -76,31 +76,31 @@ then
 t=$(echo $t | rev | cut -c 5- | rev )
 fi
 
-if [[ $b == 1 ]]
+if [[ $b == 0 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key0.txt > /dev/null || echo "Wrong Key"
-elif [[ $b == 2 ]]
+elif [[ $b == 1 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key1.txt > /dev/null || echo "Wrong Key"
-elif [[ $b == 3 ]]
+elif [[ $b == 2 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key2.txt > /dev/null || echo "Wrong Key"
-elif [[ $b == 4 ]]
+elif [[ $b == 3 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key3.txt > /dev/null || echo "Wrong Key"
-elif [[ $b == 5 ]]
+elif [[ $b == 4 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key4.txt > /dev/null || echo "Wrong Key"
-elif [[ $b == 6 ]]
+elif [[ $b == 5 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key5.txt > /dev/null || echo "Wrong Key"
-elif [[ $b == 7 ]]
+elif [[ $b == 6 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key6.txt > /dev/null || echo "Wrong Key"
-elif [[ $b == 8 ]]
+elif [[ $b == 7 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key7.txt > /dev/null || echo "Wrong Key"
-elif [[ $b == 9 ]]
+elif [[ $b == 8 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key8.txt > /dev/null || echo "Wrong Key"
 else
@@ -112,31 +112,31 @@ then
 t=$(echo $t | rev | cut -c 5- | rev )
 fi
 
-if [[ $a == 1 ]]
+if [[ $a == 0 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key0.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 2 ]]
+elif [[ $a == 1 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key1.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 3 ]]
+elif [[ $a == 2 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key2.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 4 ]]
+elif [[ $a == 3 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key3.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 5 ]]
+elif [[ $a == 4 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key4.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 6 ]]
+elif [[ $a == 5 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key5.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 7 ]]
+elif [[ $a == 6 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key6.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 8 ]]
+elif [[ $a == 7 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key7.txt > /dev/null || echo "Wrong Key"
-elif [[ $a == 9 ]]
+elif [[ $a == 8 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key8.txt > /dev/null || echo "Wrong Key"
 else
