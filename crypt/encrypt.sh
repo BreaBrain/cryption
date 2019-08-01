@@ -120,5 +120,5 @@ else
 ccrypt -er $t -k /etc/encrypt/dontremove/key9.txt > /dev/null || echo "Wrong Key"
 fi
 
-ls -l $t
+ls -l $t.cpt
 echo "Finished"
