@@ -20,6 +20,8 @@ echo "File or Folder"
 read t
 fi
 clear
+ccrypt -dr /etc/encrypt/dontremove -k /etc/encrypt/key/key.txt > /dev/null
+
 if [[ $c == 1 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key0.txt > /dev/null || echo "Wrong Key"
@@ -122,6 +124,8 @@ ccrypt -dr $t -k /etc/encrypt/dontremove/key8.txt > /dev/null || echo "Wrong Key
 else
 ccrypt -dr $t -k /etc/encrypt/dontremove/key9.txt > /dev/null || echo "Wrong Key"
 fi
+
+ccrypt -er /etc/encrypt/dontremove -k /etc/encrypt/key/key.txt > /dev/null
 
 if [ ! -d $t ]
 then
