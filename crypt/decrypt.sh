@@ -19,7 +19,7 @@ ls -l
 echo "File or Folder"
 read t
 fi
-
+clear
 if [[ $c == 1 ]]
 then
 ccrypt -dr $t -k /etc/encrypt/dontremove/key0.txt > /dev/null || echo "Wrong Key"
@@ -127,6 +127,6 @@ if [ ! -d $t ]
 then
 t=$(echo $t | rev | cut -c 5- | rev )
 fi
-clear
+
 ls -l $t
 echo "Finished"
