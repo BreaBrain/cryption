@@ -2,8 +2,6 @@
 
 t=$1
 
-#apt-get update
-#apt-get install ccrypt
 clear
 
 echo "Write a number between 1 and 10"
