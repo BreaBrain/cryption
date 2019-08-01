@@ -29,6 +29,7 @@ openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key8.txt
 openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key9.txt
 fi
 fi
+ccrypt -er /etc/encrypt/keys -k /etc/encrypt/key/key.txt > /dev/null
 clear
 echo "Finished"
 echo "Do 'encrypt (file)' for Encryption"
