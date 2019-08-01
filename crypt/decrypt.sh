@@ -127,6 +127,6 @@ if [ ! -d $t ]
 then
 t=$(echo $t | rev | cut -c 5- | rev )
 fi
-
+clear
 ls -l $t
 echo "Finished"
