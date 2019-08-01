@@ -1,13 +1,35 @@
 #!/bin/bash
 
 t=$1
+
+if [[ $2 != "" ]]
+then
+a=$(echo $2 | cut -c -1)
+if [[ $2 -gt 9 ]]
+then
+b=$(echo $2 | rev | cut -c -2 | rev | cut -c -1)
+if [[ $2 -gt 99 ]]
+then
+c=$(echo $2 | rev | cut -c -1 | rev)
+fi
+fi
+fi
 clear
+if [[ $a == "" ]]
+then
 echo "Write a number between 1 and 10"
 read a
+fi
+if [[ $b == "" ]]
+then
 echo "Another number between 1 and 10"
 read b
+fi
+if [[ $c == "" ]]
+then
 echo "And an another number between 1 and 10"
 read c
+fi
 
 clear
 if [[ $t == "" ]]
