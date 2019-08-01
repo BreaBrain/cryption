@@ -1,7 +1,7 @@
 #!/bin/bash
 
 t=$1
-
+clear
 echo "Write a number between 1 and 10"
 read a
 echo "Another number between 1 and 10"
