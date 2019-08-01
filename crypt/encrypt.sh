@@ -1,7 +1,7 @@
 #!/bin/bash
 
 t=$1
-clear
+
 echo "Write a number between 1 and 10"
 read a
 echo "Another number between 1 and 10"
@@ -16,6 +16,8 @@ ls -l
 echo "File or Folder"
 read t
 fi
+
+ccrypt -dr /etc/encrypt/dontremove -k /etc/encrypt/key/key.txt > /dev/null
 
 if [[ $a == 1 ]]
 then
@@ -119,6 +121,8 @@ ccrypt -er $t -k /etc/encrypt/dontremove/key8.txt > /dev/null || echo "Wrong Key
 else
 ccrypt -er $t -k /etc/encrypt/dontremove/key9.txt > /dev/null || echo "Wrong Key"
 fi
+
+ccrypt -er /etc/encrypt/dontremove -k /etc/encrypt/key/key.txt > /dev/null
 
 if [ ! -d $t ]
 then
