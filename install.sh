@@ -1,5 +1,3 @@
-
-
 #!/bin/bash
 apt-get update
 apt-get install ccrypt
@@ -14,21 +12,21 @@ chmod +x /bin/decrypt
 if [ ! -d /etc/encrypt/ ]
 then
 mkdir /etc/encrypt/
-mkdir /etc/encrypt/dontremove/
+mkdir /etc/encrypt/keys/
 mkdir /etc/encrypt/key
-if [ ! -f /etc/encrypt/dontremove/key0.txt ]
+if [ ! -f /etc/encrypt/keys/key0.txt ]
 then
 openssl rand -base64 50000 | rev | cut -c 4- | rev > /etc/encrypt/key/key.txt
-openssl rand -base64 5000 | rev | cut -c 4- | rev > /etc/encrypt/dontremove/key0.txt
-openssl rand -base64 5000 | rev | cut -c 4- | rev > /etc/encrypt/dontremove/key1.txt
-openssl rand -base64 5000 | rev | cut -c 4- | rev > /etc/encrypt/dontremove/key2.txt
-openssl rand -base64 5000 | rev | cut -c 4- | rev > /etc/encrypt/dontremove/key3.txt
-openssl rand -base64 5000 | rev | cut -c 4- | rev > /etc/encrypt/dontremove/key4.txt
-openssl rand -base64 5000 | rev | cut -c 4- | rev > /etc/encrypt/dontremove/key5.txt
-openssl rand -base64 5000 | rev | cut -c 4- | rev > /etc/encrypt/dontremove/key6.txt
-openssl rand -base64 5000 | rev | cut -c 4- | rev > /etc/encrypt/dontremove/key7.txt
-openssl rand -base64 5000 | rev | cut -c 4- | rev > /etc/encrypt/dontremove/key8.txt
-openssl rand -base64 5000 | rev | cut -c 4- | rev > /etc/encrypt/dontremove/key9.txt
+openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key0.txt
+openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key1.txt
+openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key2.txt
+openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key3.txt
+openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key4.txt
+openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key5.txt
+openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key6.txt
+openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key7.txt
+openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key8.txt
+openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key9.txt
 fi
 fi
 clear
