@@ -22,3 +22,5 @@ encrypt (file/folder) (three numbers between 0 and 9)
 
 decrypt (file/folder) (same three nubmers)
 ```
+# Note
+if you delete /etc/encrypt you cant decrypt files!
