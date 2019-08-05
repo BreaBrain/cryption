@@ -42,33 +42,33 @@ ccrypt -dr /etc/encrypt/keys -k /etc/encrypt/key/key.txt > /dev/null
 
 if [[ $c == 0 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key0.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key0.txt > /dev/null
 elif [[ $c == 1 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key1.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key1.txt > /dev/null
 elif [[ $c == 2 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key2.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key2.txt > /dev/null
 elif [[ $c == 3 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key3.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key3.txt > /dev/null
 elif [[ $c == 4 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key4.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key4.txt > /dev/null
 elif [[ $c == 5 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key5.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key5.txt > /dev/null
 elif [[ $c == 6 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key6.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key6.txt > /dev/null
 elif [[ $c == 7 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key7.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key7.txt > /dev/null
 elif [[ $c == 8 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key8.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key8.txt > /dev/null
 else
-ccrypt -dr $t -k /etc/encrypt/keys/key9.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key9.txt > /dev/null
 fi
 
 if [ ! -d $t ]
@@ -78,33 +78,33 @@ fi
 
 if [[ $b == 0 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key0.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key0.txt > /dev/null
 elif [[ $b == 1 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key1.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key1.txt > /dev/null
 elif [[ $b == 2 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key2.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key2.txt > /dev/null
 elif [[ $b == 3 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key3.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key3.txt > /dev/null
 elif [[ $b == 4 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key4.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key4.txt > /dev/null
 elif [[ $b == 5 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key5.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key5.txt > /dev/null
 elif [[ $b == 6 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key6.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key6.txt > /dev/null
 elif [[ $b == 7 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key7.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key7.txt > /dev/null
 elif [[ $b == 8 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key8.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key8.txt > /dev/null
 else
-ccrypt -dr $t -k /etc/encrypt/keys/key9.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key9.txt > /dev/null
 fi
 
 if [ ! -d $t ]
@@ -114,33 +114,33 @@ fi
 
 if [[ $a == 0 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key0.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key0.txt > /dev/null
 elif [[ $a == 1 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key1.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key1.txt > /dev/null
 elif [[ $a == 2 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key2.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key2.txt > /dev/null
 elif [[ $a == 3 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key3.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key3.txt > /dev/null
 elif [[ $a == 4 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key4.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key4.txt > /dev/null
 elif [[ $a == 5 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key5.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key5.txt > /dev/null
 elif [[ $a == 6 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key6.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key6.txt > /dev/null
 elif [[ $a == 7 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key7.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key7.txt > /dev/null
 elif [[ $a == 8 ]]
 then
-ccrypt -dr $t -k /etc/encrypt/keys/key8.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key8.txt > /dev/null
 else
-ccrypt -dr $t -k /etc/encrypt/keys/key9.txt > /dev/null || echo "Wrong Key"
+ccrypt -dr $t -k /etc/encrypt/keys/key9.txt > /dev/null
 fi
 
 ccrypt -er /etc/encrypt/keys -k /etc/encrypt/key/key.txt > /dev/null
@@ -151,4 +151,5 @@ t=$(echo $t | rev | cut -c 5- | rev )
 fi
 
 ls -l $t
+echo "--------"
 echo "Finished"

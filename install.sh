@@ -1,7 +1,7 @@
 #!/bin/bash
 apt-get update
 apt-get install ccrypt
-
+apt-get install zip
 
 clear
 
