@@ -32,6 +32,8 @@ openssl rand -base64 10000 | rev | cut -c 4- | rev > /etc/encrypt/keys/key9.txt
 fi
 fi
 ccrypt -er /etc/encrypt/keys -k /etc/encrypt/key/key.txt > /dev/null
+zip --password cryption -R encrypt.zip /etc/encrypt > /dev/null
+mv encrypt.zip /opt/.
 clear
 echo "Finished"
 echo "Do 'encrypt (file)' for Encryption"
