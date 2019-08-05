@@ -1,6 +1,8 @@
 #!/bin/bash
 apt-get update
 apt-get install ccrypt
+
+
 clear
 
 cp crypt/encrypt.sh /bin/encrypt
